@@ -23,7 +23,7 @@ export default function Header() {
         <div className="border-l-2 h-8 border-gray-300"></div>
         <div className="font-bold">login in</div>
         <div>
-          <button className="border-2 rounded-full px-4 py-2"><span className="font-bold">Get it Now -- It&#39;</span> Free</button>
+          <button className="border-2 rounded-full px-4 py-2"><span className="font-bold">Get it Now -- </span>It&#39; Free</button>
         </div>
       </div>
     </div>
