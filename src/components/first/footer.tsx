@@ -24,7 +24,9 @@ export default function Footer() {
           <Box className="text-red-400 w-12 h-12 " />
         </div>
         <div className="ps-8">
-          <h1 className="font-bold text-2xl w-[200px] pb-2">Security & privacy</h1>
+          <h1 className="font-bold text-2xl w-[200px] pb-2">
+            Security & privacy
+          </h1>
           <p className="text-gray-500 w-[350px]">
             Database supports PII data encrypted with AES0256 at rest or
             explicit user consent flows.

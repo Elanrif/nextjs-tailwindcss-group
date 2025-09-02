@@ -1,11 +1,11 @@
-import { ArrowUpRight, Plus, Star, View} from "lucide-react";
+import { ArrowUpRight, Check, CheckCheck, Plus, Star, View } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
 export default function Banner() {
   return (
     <div className="flex justify-between items-center mt-6 mx-8 bg-[#c6c3c3] rounded-lg p-6">
-      <div className="flex flex-col gap-y-6 ps-9 pt-5">
+      <div className="flex flex-col w-1/2 gap-y-6 ps-9 pt-5">
         <div className="flex items-center gap-3">
           <div className="p-4 rounded-full bg-black text-white font-bold">
             <View />
@@ -32,7 +32,7 @@ export default function Banner() {
           drive sales growth, and harness ai-powered user content - up to 50x
           faster
         </div>
-        <div className="flex items-center gap-2 border-b-2 border-gray-400 pb-5">
+        <div className="flex items-center gap-2 border-b-2 border-gray-400 w-[420px] pb-5">
           <div>
             <Image
               src="/Images/women.jpg"
@@ -60,12 +60,28 @@ export default function Banner() {
           </div>
           <div className="flex items-center font-bold gap-2">
             <span className="underline capitalize">our pricing</span>
-              <ArrowUpRight />
+            <ArrowUpRight />
           </div>
         </div>
       </div>
-      <div className="rounded-lg overflow-hidden h-[500px] w-[600px]">
-        <Image src="/Images/SecondBanner.png" width={400} height={500} alt="Women" className="h-full w-full pe-24" />
+      <div className="relative ">
+        <div className="">
+          <Image
+            src="/Images/women4.jpg"
+            width={400}
+            height={500}
+            alt="AfricanWomen"
+            className="object-cover rounded-3xl me-35  h-[400px] w-[320px]"
+          />
+        </div>
+        <div className="flex absolute top-14 -left-27 rounded-3xl px-4 py-2 bg-white text-black w-[200px] ">
+          <Check className="border p-1 rounded-lg bg-orange-400" />
+          <p className="ps-4">How is the fit ?</p>
+        </div>
+        <div className="flex items-center absolute top-26 -left-42 rounded-3xl px-4 py-1 bg-white text-black w-[260px] ">
+          <Check className="border p-1 rounded-lg bg-blue-400 " size={32} />
+          <p className="ps-4">Do you like the design ?</p>
+        </div>
       </div>
     </div>
   );

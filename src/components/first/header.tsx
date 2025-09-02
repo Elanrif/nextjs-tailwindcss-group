@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 
@@ -10,14 +11,12 @@ export default function Header() {
         <h1 className="font-extrabold text-3xl">heexo</h1>
       </div>
       <div className="flex flex-row items-center text-gray-500 gap-12">
-        <div>Why heexo</div>
-        <div>Platform</div>
-        <div>Solutions</div>
-        <div>Changelog</div>
+        <Link href="#">Why heexo</Link>
+        <Link href="#">Platform</Link>
+        <Link href="#">Solutions</Link>
+        <Link href="#">Changelog</Link>
       </div>
-      <div>
-        <button className="bg-stone-200 rounded-2xl px-5 py-2">Book a demo</button>
-      </div>
+      <button className="bg-stone-200 rounded-2xl px-5 py-3">Book a demo</button>
     </div>
   );
 }
