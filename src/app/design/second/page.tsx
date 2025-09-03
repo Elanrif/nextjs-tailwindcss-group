@@ -19,7 +19,7 @@ export default function page() {
         </div>
         <div className='flex justify-between text-sm font-bold gap-8 items-center'>
           <p>Log in</p>
-          <button className='border-1 rounded-3xl px-5 py-2'>Get it Now - it&apos;s Free</button>
+          <button className='border-1 rounded-3xl px-5 py-2'>Get it Now <span className='font-normal'>- it&apos;s Free</span></button>
         </div>
       </div>
       {/* Sous menu */}
@@ -35,8 +35,9 @@ export default function page() {
             </div>
           </div>
           <div>
-            <p className='text-8xl font-bold'>Grow+</p>
+            <p className='text-9xl font-bold'>Grow+</p>
           </div>
+          <div className='border-b-1 text-gray-500' />
           <div>
             <p className='text-lg'>
               Drive Sales Growth,And Harness Ai-powered User <br />
@@ -56,12 +57,13 @@ export default function page() {
               </p>
             </div>
           </div>
+          <div className='border-b-1 text-gray-500' />
           <div className='flex items-center gap-5'>
             <button className='border-1 bg-black text-white px-4 py-4 rounded-4xl text-xs font-bold'>Get it Now - it&apos;s Free</button>
-            <div className='flex items-center gap-2 font-bold'>
-              <p className='text-sm font-bold'>Our Pricing</p>
+            <button className='flex items-center gap-2 font-bold border-white border p-4 rounded-full '>
+              <span className='text-sm font-bold '>Our Pricing</span>
               <ArrowUpRight size={20} />
-            </div>
+            </button>
           </div>
         </div>
         <div className='relative border-1 space-y-10'>
@@ -89,7 +91,7 @@ export default function page() {
         </div>
       </div>
       {/* Footer*/}
-      <div className='flex justify-between items-center font-bold'>
+      <div className='flex justify-evenly items-center font-bold'>
         <Image
           src="/images/Rakuten.jpg"
           alt="Placeholder"

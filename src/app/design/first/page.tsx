@@ -26,8 +26,10 @@ export default function page() {
                 <p className='font-bold text-6xl'>The database for<br />modern applications</p>
                 <div className='space-y-5'>
                     <div className='flex items-center gap-5'>
-                        <button className='text-black bg-amber-50 rounded-lg px-7 py-2 border-2 border-gray-200'>Start 14-day trial</button>
-                        <ArrowUpRight size={40} className='bg-amber-50 rounded-3xl border-2 border-gray-200' />
+                        <button className='text-black bg-amber-50 rounded-lg px-10 py-4 border-2 border-gray-200'>Start 14-day trial</button>
+                        <div className='p-5 bg-amber-50 rounded-full border-2  border-gray-200'>
+                        <ArrowUpRight size={24} strokeWidth={1}/>
+                        </div>
                     </div>
                     <div className='text-gray-400'> Hurree centralizes data from your entire tech stack <br /> anddatabase creating one clear view of performance</div>
                 </div>
@@ -63,7 +65,7 @@ export default function page() {
                 <div className='space-y-3'>
                     <div className='flex gap-5'>
                         <div className='bg-orange-50 p-5 h-[80px] rounded-2xl'>
-                            <Shield size={40} className='text-orange-300 ' />
+                            <Shield size={40} className='text-orange-300  ' />
                         </div>
                         <div>
                             <p className='text-2xl font-bold'>
