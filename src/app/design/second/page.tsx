@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowUpRight, Check, Flower, Star, Zap } from 'lucide-react'
+import { ArrowUpRight, Check, Flower, Play, Star, Zap } from 'lucide-react'
 import Image from 'next/image';
 
 export default function page() {
@@ -70,8 +70,11 @@ export default function page() {
             </button>
           </div>
         </div>
-        <div className='relative border-1 space-y-10'>
+        <div className='relative space-y-10'>
           <div className='flex justify-center items-center py-20 px-40'>
+            <div className='absolute border-1 rounded-full bg-white justify-center p-3'>
+            <Play size={20} fill='black'/>
+            </div>
             <Image
               src="/images/fitness.jpg"
               alt="Placeholder"
@@ -79,13 +82,13 @@ export default function page() {
               height={200}
               className='rounded-4xl w-full h-[400px] object-cover'
             />
-            <div className='absolute left-30 top-40 flex text-sm items-center gap-2  rounded-full px-3 py-2 bg-white w-40 mt-5 '>
+            <div className='absolute left-30 top-30 flex text-sm items-center gap-2  rounded-full px-3 py-2 bg-white w-40 mt-5 '>
               <Check size={20} className='border-1 rounded-md bg-amber-600' />
               <p>
                 How is the fit?
               </p>
             </div>
-            <div className='absolute left-20 top-50 flex text-sm items-center gap-2  rounded-full px-3 py-2 bg-white w-[200px] mt-5 '>
+            <div className='absolute left-20 top-40 flex text-sm items-center gap-2  rounded-full px-3 py-2 bg-white w-[200px] mt-5 '>
               <Check size={20} className='border-1 rounded-md bg-blue-500' />
               <p>
                 Do you like the disign?
@@ -98,25 +101,25 @@ export default function page() {
               </p>
               <span> More sales this<br />week</span>
             </div>
-            <div className='absolute flex justify-between right-20 bottom-30 text-sm items-center gap-2 rounded-2xl px-3 py-2 bg-white/30 w-40'>
+            <div className='absolute flex justify-between right-15 bottom-25 text-sm items-center gap-2 rounded-2xl px-3 py-1 bg-white/30 '>
               <div>
                 <Image
                   src="/images/basket.jpg"
                   alt="Placeholder"
                   width={200}
                   height={200}
-                  className='rounded-2xl w-[100px] h-[100px] object-cover px-1 py-3'
+                  className='rounded-3xl w-[90px] h-[90px] object-cover p-3'
                 />
               </div>
-              <div className='text-sm'>
+              <div className='text-sm px-5 py-1.5 mt-2'>
                 <span> Nike Shoes<br />jordan</span>
-                <p className='text-base font-bold mt-2'>
+                <div className='text-base font-bold mt-1'>
                   $849.99
-                  <p className='flex justify-center items-center border-1 bg-white rounded-full px-1 gap-1 mt-2'>
+                  <p className='flex justify-center items-center bg-white rounded-full gap-1 mt-1'>
                     <Star size={12} fill='black' />
                     <span className='text-sm'>4.9</span>
                   </p>
-                </p>
+                </div>
               </div>
             </div>
           </div>
