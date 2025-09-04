@@ -98,8 +98,8 @@ export default function page() {
               <div><Image
               src="/images/basket.jpg"
               alt="Placeholder"
-              width={100}
-              height={100}
+              width={200}
+              height={200}
               className='rounded-4xl w-[100px] h-[100px] object-cover px-1 py-3'
             /></div>
               <div className>
