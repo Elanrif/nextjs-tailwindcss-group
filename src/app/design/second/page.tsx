@@ -59,7 +59,7 @@ export default function page() {
           </div>
           <div className='border-b-1 text-gray-500' />
           <div className='flex items-center gap-5'>
-            <button className='border-1 bg-black text-white px-4 py-4 rounded-4xl text-xs font-bold'>Get it Now - it&apos;s Free</button>
+            <button className='border-1 bg-black text-white px-4 py-4 rounded-4xl text-xs font-bold'>Get it Now <span className='font-normal'>- it&apos;s Free</span></button>
             <button className='flex items-center gap-2 font-bold border-white border p-4 rounded-full '>
               <span className='text-sm font-bold '>Our Pricing</span>
               <ArrowUpRight size={20} />
@@ -86,6 +86,28 @@ export default function page() {
               <p>
                 Do you like the disign?
               </p>
+            </div>
+            <div className='absolute flex-col right-20 top-20 text-sm gap-2 rounded-2xl px-3 py-2 bg-white/30'>
+              <p className='text-sm'>&mdash;UP TO </p>
+              <p className='text-base font-bold mt-2'>
+                60%
+              </p>
+              <span> More sales this<br />week</span>
+            </div>
+            <div className='absolute flex justify-between right-20 bottom-30 text-sm items-center gap-2 rounded-2xl px-3 py-2 bg-white/30 w-40'>
+              <div><Image
+              src="/images/basket.jpg"
+              alt="Placeholder"
+              width={100}
+              height={100}
+              className='rounded-4xl w-[100px] h-[100px] object-cover px-1 py-3'
+            /></div>
+              <div className>
+              <span> Nike Shoes<br />jordan</span>
+                <p className='text-base font-bold mt-2'>
+                $849.99
+              </p>
+              </div>
             </div>
           </div>
         </div>
