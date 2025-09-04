@@ -18,7 +18,7 @@ export default function page() {
                     <p>Changlog</p>
                 </div>
                 <div>
-                    <button className='text-black bg-white rounded-full border-2 px-7 py-2 border-gray-400'>Book a demo</button>
+                    <button className='text-black bg-white rounded-lg border-1 px-7 py-2 border-gray-400'>Book a demo</button>
                 </div>
             </div>
             {/* Sous menu */}

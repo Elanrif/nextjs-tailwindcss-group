@@ -1,4 +1,4 @@
-import { Play, Target } from 'lucide-react'
+import { ChevronDown, ChevronRight, Play, Target } from 'lucide-react'
 import React from 'react'
 import Image from 'next/image';
 
@@ -7,7 +7,7 @@ export default function page() {
         <div className='p-10'>
             <div className="flex flex-col gap-10">
                 <div className='bg-black rounded-2xl flex justify-between items-center gap-4 p-5'>
-                    <div className='flex flex-col grow justify-start items-start border-white rounded-2xl text-lg bg-white p-5'>
+                    <div className='flex flex-col grow justify-start items-start border-white rounded-2xl text-lg bg-white px-10 py-5'>
                         <div className='w-full h-full'>
                             {/* Header */}
                             <div className='flex justify-between items-center w-full'>
@@ -24,8 +24,14 @@ export default function page() {
                                     </div>
                                 </div>
                                 <div className='flex items-center gap-8 text-sm'>
-                                    <button className='border-1 rounded-3xl px-5 py-1'>Stores</button>
-                                    <button className='border-1 rounded-3xl px-5 py-1'>Contact Us</button>
+                                    <button className='flex border-1 rounded-3xl gap-2 px-3 py-2 bg-black text-white'>
+                                        Stores
+                                        <ChevronDown size={20} className='border-1 rounded-full' />
+                                    </button>
+                                    <button className='flex border-1 rounded-3xl gap-2 px-3 py-1'>
+                                        <ChevronRight size={20} className='border-1 rounded-full bg-black text-white' />
+                                        Contact Us
+                                    </button>
                                 </div>
                             </div>
                             {/* Sous menu */}
@@ -37,41 +43,45 @@ export default function page() {
                                         efforties convenience of AirPods. Your most personalized<br />
                                         listening experience ever</p>
                                     <div className='flex justify-between items-center gap-5'>
-                                        <button className='text-white bg-black rounded-3xl px-7 py-2 border-2 border-gray-200'>Buy Now -$139.00</button>
+                                        <button className='text-white text-sm bg-black rounded-3xl px-5 py-2 border-2 border-gray-200'>Buy Now -$139.00</button>
                                         <button className='flex justify-between items-center gap-2 '>
-                                            <span className='rounded-full p-3 bg-black'><Play size={20} className='text-white'/></span>
-                                            <span>watch journey into sound</span>
+                                            <span className='rounded-full p-1 bg-black'>
+                                                <Play size={10} className='text-white'/></span>
+                                            <p className='text-sm font-bold'>
+                                                watch
+                                                <span className='font-normal'> journey into sound</span>
+                                            </p>
                                         </button>
                                     </div>
-                                    <div className='flex justify-between items-center gap-5 mt-6'>
-                                        <p>Follow us</p>
+                                    <div className='flex justify-between items-center gap-4 mt-6'>
+                                        <p className='text-sm font-bold'>Follow us</p>
                                         <Image
                                             src="/images/instagram.jpg"
                                             alt="Placeholder"
                                             width={200}
                                             height={200}
-                                            className='rounded-full w-10 h-10 object-cover'
+                                            className='w-5 h-5 object-cover'
                                         />
                                         <Image
                                             src="/images/youtube.jpg"
                                             alt="Placeholder"
                                             width={200}
                                             height={200}
-                                            className='rounded-full w-10 h-10 object-cover'
+                                            className='w-[60px] h-[60px] object-cover'
                                         />
                                         <Image
                                             src="/images/pinterest.jpg"
                                             alt="Placeholder"
                                             width={200}
                                             height={200}
-                                            className='rounded-full w-10 h-10 object-cover'
+                                            className='w-[35px] h-[35px] object-cover'
                                         />
                                         <Image
                                             src="/images/facebook.jpg"
                                             alt="Placeholder"
                                             width={200}
                                             height={200}
-                                            className='rounded-full w-5 h-5 object-cover'
+                                            className='w-5 h-5 object-cover'
                                         />
                                     </div>
                                 </div>
