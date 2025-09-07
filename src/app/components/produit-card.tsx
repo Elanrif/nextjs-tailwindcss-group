@@ -21,9 +21,9 @@ export default function ProduitCard(
 ) {
 
   return (
-    <div className='p-4 space-y-4'>
+    <div className='p-4 space-y-4 border-red-400 border max-w-[350px]'>
       {/* Soldes & Pourcentage */}
-      <div className='justify-between items-center bg-gray-100 p-2 mb-2 w-[350px] '>
+      <div className='justify-between items-center bg-gray-100 p-2 mb-2'>
         <div className='flex justify-between items-center px-2 mb-2'>
           <div className="flex justify-center items-center bg-black text-sm text-white size-12 rounded-full">
             <p>soldes</p>
@@ -41,16 +41,16 @@ export default function ProduitCard(
         />
       </div>
       {/* Description */}
-      <div className='flex border items-center space-y-2'>
-        <div className='flex-col items-center'>
-          <p className='text-lg font-light uppercase'>{name}</p>
-          <div className='flex gap-4 items-center justify-between'>
-            {/* Prix */}
+      <div className='space-y-2 border items-center'>
+        <p className='text-lg font-light uppercase'>{name}</p>
+        <div className='flex gap-4 items-center justify-between'>
+          {/* Prix */}
+          <div className='flex gap-2 items-center'>
             <p className='text-lg font-light line-through text-gray-500'>{oldPrice} MAD</p>
             <p className='text-lg text-red-600'>{newPrice} MAD</p>
-        {/* Couleurs */}
-        <div className={`size-6 ${color} rounded-full`} />
-        </div>
+          </div>
+          {/* Couleurs */}
+          <div className={`size-6 ${color} rounded-full`} />
         </div>
       </div>
     </div>
