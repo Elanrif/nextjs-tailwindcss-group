@@ -21,7 +21,7 @@ export default function ProduitCard(
 ) {
 
   return (
-    <div className='p-4 space-y-4 border-red-400 border max-w-[350px]'>
+    <div className='p-4 space-y-4 max-w-[350px]'>
       {/* Soldes & Pourcentage */}
       <div className='justify-between items-center bg-gray-100 p-2 mb-2'>
         <div className='flex justify-between items-center px-2 mb-2'>
@@ -41,7 +41,7 @@ export default function ProduitCard(
         />
       </div>
       {/* Description */}
-      <div className='space-y-2 border items-center'>
+      <div className='space-y-2 items-center'>
         <p className='text-lg font-light uppercase'>{name}</p>
         <div className='flex gap-4 items-center justify-between'>
           {/* Prix */}
@@ -52,6 +52,10 @@ export default function ProduitCard(
           {/* Couleurs */}
           <div className={`size-6 ${color} rounded-full`} />
         </div>
+      </div>
+      {/* ProduitCardMobile */}
+      <div>
+
       </div>
     </div>
   )
