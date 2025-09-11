@@ -88,12 +88,12 @@ export default function Banner() {
           <Check className="border p-1 rounded-lg bg-blue-400 " />
           <p className="ps-4">Do you like the design ?</p>
         </div>
-        <div className="flex flex-col absolute opacity-85l py-3 px-5 rounded-3xl top-10 left-70 border border-white/30 bg-white/20 backdrop-blur-md w-[170px]">
+        <div className="flex flex-col absolute opacity-85l py-3 px-5 rounded-3xl top-10 left-70 border border-white/30 bg-white/20 backdrop-blur-sm w-[170px]">
           <h1 className="uppercase">- up to</h1>
           <h1 className="text-3xl font-bold pt-5">60 %</h1>
           <p className="w-[120px]">More Sales this week</p>
         </div>{" "}
-        <div className="flex absolute p-5 rounded-3xl top-60 left-60 border border-white/30 backdrop-blur-md bg-white/20 w-[270px]">
+        <div className="flex absolute p-5 rounded-3xl top-60 left-60 border border-white/30 backdrop-blur-sm bg-white/20 w-[270px]">
           <div>
             <Image src="/Images/jordan1.png" width={70} height={50} alt="Jordan Shoes" className="object-cover h-full w-full rounded-xl" />
           </div>

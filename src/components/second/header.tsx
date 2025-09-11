@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="flex justify-between mt-4 mx-8">
+    <div className="flex items-center sticky top-0 z-50 inset-x-0 py-6 bg-white justify-between mt-4 mx-8">
       <div className="flex text-md font-bold gap-2">
         <Zap />
         <div className="text-md font-bold">/ Sales@reeles.io</div>
